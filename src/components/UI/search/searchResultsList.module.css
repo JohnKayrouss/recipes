@@ -1,0 +1,22 @@
+.resultsContainer {
+	background-color: #fff;
+	width: 56.3em;
+	max-height: 24em;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 1;
+
+	margin-top: 10.3em;
+	overflow-y: auto;
+	outline: none;
+}
+.resultsContainer:focus {
+	outline: none;
+}
+@media (max-width: 1400px) {
+	.resultsContainer {
+		width: 55em;
+		max-height: 27.3em;
+		margin-top: 10.3em;
+	}
+}

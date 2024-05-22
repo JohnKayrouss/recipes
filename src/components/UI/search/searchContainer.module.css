@@ -1,0 +1,180 @@
+.searchContainer {
+	width: 100%;
+	height: 100%;
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.homeInput {
+	width: 46em;
+	max-height: 5em;
+	min-height: 5em;
+	border: none;
+	background: rgba(245, 245, 245, 1);
+	border-radius: 10px;
+	padding: 0;
+	padding-left: 1em;
+	font-size: 24px;
+	box-sizing: border-box;
+}
+.homeInput::placeholder {
+	color: #00000050;
+	font-size: 1.2em;
+	padding-left: 0.5em;
+	letter-spacing: 0.5px;
+	box-sizing: border-box;
+}
+
+.homeInput:focus {
+	outline: none;
+}
+.homeInput[type="text"] {
+	padding-left: 5px;
+	font-size: 1.2em;
+}
+
+.btnContainer {
+	padding: 0.5em 0;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+.btn {
+	width: 18em;
+	height: 5.5em;
+	border: 0.1px solid #eee;
+	outline: none;
+	cursor: pointer;
+	background: linear-gradient(95.71deg, #ff7a7a -39.64%, #f75900 135.31%);
+	border-radius: 0.8em;
+	transition: var(--btnTransition);
+	box-sizing: border-box;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	transition: 0.5s ease-in;
+}
+
+.btn span {
+	font-size: 14px !important;
+	font-weight: 600;
+	color: var(--white);
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+}
+.btnIcon {
+	color: var(--white);
+	font-size: 14px;
+	margin-right: 12px;
+}
+
+@media (max-width: 1800px) {
+	.homeInput {
+		width: 43em;
+	}
+	.homeInput::placeholder {
+		font-size: 1.2em;
+		padding-left: 0.5em;
+		letter-spacing: 0.5px;
+	}
+	.btn {
+		width: 17em;
+		height: 5.5em;
+		border: 0.1px solid #eee;
+		outline: none;
+		cursor: pointer;
+		border-radius: 0.8em;
+		transition: 0.5s ease-in;
+	}
+	.btn span {
+		font-size: 1.6em !important;
+	}
+}
+@media (max-width: 1000px) {
+	.homeInput {
+		width: 39em;
+	}
+	.btn {
+		width: 17em;
+		height: 5.5em;
+		border: 0.1px solid #eee;
+		outline: none;
+		cursor: pointer;
+		border-radius: 1.9em;
+		transition: 0.5s ease-in;
+	}
+	.btn span {
+		font-size: 1em !important;
+	}
+	.btnIcon {
+		color: var(--white);
+		font-size: 12px;
+		margin-right: 8px;
+	}
+}
+@media (max-width: 900px) {
+	.homeInput {
+		width: 39em;
+	}
+	.btn {
+		width: 15em;
+		height: 5.5em;
+		border: 0.1px solid #eee;
+		outline: none;
+		cursor: pointer;
+		border-radius: 1.9em;
+		transition: 0.5s ease-in;
+	}
+	.btn span {
+		font-size: 9px !important;
+	}
+	.btnIcon {
+		display: none;
+	}
+}
+@media (max-width: 850px) {
+	.homeInput {
+		width: 35em;
+	}
+}
+@media (max-width: 800px) {
+	.homeInput {
+		width: 40em;
+	}
+}
+@media (max-width: 750px) {
+	.homeInput {
+		width: 36em;
+	}
+}
+@media (max-width: 700px) {
+	.homeInput {
+		width: 39em;
+	}
+}
+@media (max-width: 650px) {
+	.homeInput {
+		width: 34em;
+	}
+}
+@media (max-width: 600px) {
+	.homeInput {
+		width: 48em;
+	}
+}
+@media (max-width: 575px) {
+	.homeInput {
+		width: 45em;
+	}
+}
+@media (max-width: 550px) {
+	.homeInput {
+		width: 42em;
+	}
+}
+@media (max-width: 525px) {
+	.homeInput {
+		width: 40em;
+	}
+}

@@ -1,0 +1,476 @@
+.recipeCard {
+	width: 110em;
+	min-height: 60em;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #fff;
+	flex-direction: column;
+	margin-bottom: 10em;
+}
+.SpinnerMoreInfoContainer {
+	height: 55em;
+	width: 110em;
+	margin: auto;
+	background-color: azure;
+}
+
+.header {
+	height: 8em;
+	width: 110em;
+	display: flex;
+	align-items: center;
+	font-family: "Poppins-Medium", Helvetica;
+}
+.header h1 {
+	font-size: 2.6em;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	text-shadow: 1px 0px 1px var(--secondaryOrange);
+	text-transform: capitalize;
+	padding-left: 0.3em;
+}
+.infoContainer {
+	width: 105em;
+	min-height: 43em;
+	box-shadow: 0px 0px 13px 0px rgba(124, 124, 124, 0.28);
+	border-radius: 10px;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 206, 103, 0.22) -42.47%,
+		rgba(253, 237, 202, 0) 100%
+	);
+}
+.tabs {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 7.5em;
+}
+.tab {
+	padding: 24px 0;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-top: none;
+	cursor: pointer;
+	position: relative;
+}
+.tab p {
+	font-size: 1.9em;
+	color: rgba(0, 0, 0, 0.5);
+	text-transform: capitalize;
+	padding: 0 3px;
+}
+
+.activeTab {
+	border: none;
+}
+.activeTab::after {
+	border-top: 3px solid var(--secondaryOrange);
+	content: "";
+	position: absolute;
+	top: 1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background: initial;
+	animation: new 0.5s;
+}
+
+.contents {
+	position: relative;
+}
+.content {
+	display: none;
+	position: relative;
+	padding: 3.5em 2em;
+}
+.activeContent {
+	margin-left: 10px;
+	display: block;
+	margin-right: 10px;
+	transition: all 1s ease-in-out;
+}
+
+.content P {
+	letter-spacing: 0.4px;
+	line-height: 22px;
+	font-size: 1.6em;
+}
+.content ul {
+	list-style: inside;
+}
+.content li {
+	font-size: 1.6em;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes new {
+	from {
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-color: rgba(255, 184, 0, 0.1);
+	}
+	to {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(255, 184, 0, 0.1);
+	}
+}
+
+.shimmerWrapper {
+	width: 100% !important;
+	height: 100%;
+}
+
+@media (max-width: 1900px) {
+	.tabs {
+		height: 7.8em;
+	}
+}
+@media (max-width: 1750px) {
+	.tabs {
+		height: 7.8em;
+	}
+	.tab p {
+		font-size: 1.8em;
+		padding: 0 2px;
+	}
+	.content P {
+		font-size: 1.5em;
+		letter-spacing: 0.3px;
+	}
+	.content li {
+		font-size: 1.5em;
+		letter-spacing: 0.3px;
+	}
+}
+@media (max-width: 1700px) {
+	.tabs {
+		height: 8.2em;
+	}
+	.tab p {
+		font-size: 1.8em;
+		padding: 0 2px;
+	}
+}
+@media (max-width: 1550px) {
+	.tabs {
+		height: 8.5em;
+	}
+	.tab p {
+		font-size: 1.8em;
+		padding: 0 1px;
+	}
+	.content P {
+		font-size: 1.5em;
+		letter-spacing: 0.2px;
+	}
+	.content li {
+		font-size: 1.5em;
+		letter-spacing: 0.2px;
+	}
+}
+@media (max-width: 1450px) {
+	.tabs {
+		height: 9.1em;
+	}
+	.tab p {
+		font-size: 1.9em;
+		padding: 0 1px;
+	}
+	.content P {
+		font-size: 1.7em;
+		letter-spacing: 0.2px;
+	}
+	.content li {
+		font-size: 1.7em;
+		letter-spacing: 0.2px;
+	}
+	.infoContainer {
+		box-shadow: 0px 0px 12px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 1400px) {
+	.tabs {
+		height: 9.6em;
+	}
+	.tab p {
+		font-size: 2.1em;
+		padding: 0 1px;
+	}
+	.infoContainer {
+		box-shadow: 0px 0px 11px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 1400px) {
+	.tabs {
+		height: 9.6em;
+	}
+	.tab p {
+		font-size: 1.9em;
+		padding: 0 1px;
+	}
+	.infoContainer {
+		margin: 2em 0;
+		box-shadow: 0px 0px 10px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 1300px) {
+	.tabs {
+		height: 10.2em;
+	}
+	.tab p {
+		font-size: 1.9em;
+		padding: 0;
+	}
+	.content P {
+		font-size: 1.8em;
+		letter-spacing: 0.2px;
+	}
+	.content li {
+		font-size: 1.8em;
+		letter-spacing: 0.2px;
+	}
+}
+@media (max-width: 1200px) {
+	.tabs {
+		height: 11.3em;
+	}
+	.tab p {
+		font-size: 2.1em;
+	}
+	.content P {
+		font-size: 1.9em;
+		letter-spacing: 0.1px;
+	}
+	.content li {
+		font-size: 1.9em;
+		letter-spacing: 0.1px;
+	}
+	.infoContainer {
+		box-shadow: 0px 0px 9px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 1100px) {
+	.tabs {
+		height: 12.4em;
+	}
+	.tab p {
+		font-size: 2.2em;
+	}
+	.content P {
+		font-size: 2em;
+		letter-spacing: 0;
+	}
+	.content li {
+		font-size: 2em;
+		letter-spacing: 0px;
+	}
+	.infoContainer {
+		margin: 2em 0;
+		box-shadow: 0px 0px 8px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 1000px) {
+	.tabs {
+		height: 12.5em;
+	}
+	.tab p {
+		font-size: 2.4em;
+	}
+
+	.content li {
+		font-size: 2.4em;
+		letter-spacing: 0px;
+	}
+	.infoContainer {
+		margin: 4em 0;
+		box-shadow: 0px 0px 8px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+@media (max-width: 800px) {
+	.header {
+		justify-content: center;
+	}
+	.header h1 {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 750px) {
+	.recipeCard {
+		width: 100em;
+		min-height: 60em;
+	}
+	.infoContainer {
+		min-height: 43em;
+		width: 90%;
+	}
+	.header {
+		width: 95em;
+
+		justify-content: center;
+	}
+	.tabs {
+		height: 12.5em;
+	}
+	.tab p {
+		font-size: 2.4em;
+	}
+
+	.content li {
+		font-size: 2.4em;
+		letter-spacing: 0px;
+	}
+	.infoContainer {
+		margin: 4em 0;
+		box-shadow: 0px 0px 8px 0px rgba(124, 124, 124, 0.28);
+	}
+}
+
+@media (max-width: 650px) {
+	.recipeCard {
+		width: 90em;
+		min-height: 60em;
+	}
+
+	.header {
+		height: 9em;
+		width: 85em;
+		justify-content: center;
+	}
+	.header h1 {
+		font-size: 3em;
+	}
+	.infoContainer {
+		width: 85em;
+		min-height: 43em;
+	}
+	.tabs {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+		height: 40em;
+	}
+	.tab {
+		padding: 0;
+		cursor: pointer;
+		position: relative;
+		border-radius: 100%;
+		width: 80px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2px 10px;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 206, 103, 0.7) -42.47%,
+			rgba(253, 237, 202, 0.3) 100%
+		);
+		box-shadow: 0px 0px 8px 0px rgba(124, 124, 124, 0.28);
+	}
+	.activeTab::after {
+		border-top: 25px solid var(--secondaryOrange);
+	}
+	.tab p {
+		font-size: 2.4em;
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	.content li {
+		font-size: 2.4em;
+		letter-spacing: 0px;
+	}
+	.infoContainer {
+		margin: 4em 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.recipeCard {
+		width: 100%;
+		min-height: 60em;
+	}
+	.header {
+		width: 100%;
+	}
+	.header h1 {
+		font-size: 3.2em;
+	}
+	.infoContainer {
+		width: 95%;
+	}
+}
+@media (max-width: 540px) {
+	.recipeCard {
+		width: 100%;
+		min-height: 60em;
+	}
+	.header {
+		width: 100%;
+	}
+	.header h1 {
+		font-size: 3.2em;
+	}
+	.infoContainer {
+		width: 97%;
+	}
+	.tab p {
+		font-size: 2.1em;
+	}
+	.tabs {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+		min-height: 40em;
+	}
+	.tab {
+		width: 70px;
+		height: 70px;
+	}
+	.activeTab::after {
+		border-top: 20px solid var(--secondaryOrange);
+	}
+}
+@media (max-width: 470px) {
+	.header h1 {
+		font-size: 3.4em;
+	}
+	.infoContainer {
+		width: 97%;
+	}
+	.tab p {
+		font-size: 2em;
+	}
+	.tabs {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+		min-height: 45em;
+	}
+	.tab {
+		width: 62px;
+		height: 62px;
+	}
+	.activeTab::after {
+		border-top: 17px solid var(--secondaryOrange);
+	}
+}

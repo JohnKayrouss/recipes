@@ -1,0 +1,6 @@
+.recipeContainer {
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: calc(100vh - 7.8em);
+	background-color: #fff;
+}

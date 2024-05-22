@@ -1,0 +1,12 @@
+.shimmerContainer {
+	display: flex;
+	/* background-color: rgb(215, 229, 229); */
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	margin: 2em;
+}
+.card {
+	margin: 0 !important;
+}

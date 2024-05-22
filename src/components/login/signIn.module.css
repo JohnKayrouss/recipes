@@ -1,0 +1,168 @@
+.formWrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	font-size: 1.5em;
+	width: 600px;
+	height: 600px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	box-shadow: 0 0 0.5em rgba(255, 174, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+	gap: 15px;
+}
+
+.inputRow:first-child {
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputRow h2 {
+	color: var(--secondaryOrange);
+	text-shadow: -1px 2px 1px rgba(241, 114, 40, 1);
+	font-size: 38px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 5px;
+}
+
+.inputRow {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	border-bottom: 2px solid var(--secondaryOrange);
+	margin: 12px 0;
+}
+
+.inputRow input::placeholder {
+	font-size: 16px;
+	color: var(--tertiaryOrange);
+	height: 20px;
+	width: 80%;
+}
+
+input[type="email"],
+input[type="password"] {
+	width: 90%;
+	height: 100%;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	font-size: 1.2em;
+	font-size: 16px;
+	padding-left: 7px;
+	padding-top: 30px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.iconEmail,
+.iconPassword {
+	position: absolute;
+	right: 22px;
+	top: 32px;
+	font-size: 24px;
+	padding: 4px;
+	color: var(--secondaryOrange);
+}
+
+.formRow {
+	width: 100%;
+	padding: 0.3em 0em;
+	font-size: 1.1em;
+	color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: space-between;
+}
+
+.linkStyles {
+	text-decoration: none;
+	margin-left: 0.3em;
+	border-radius: 1.1em;
+	overflow: hidden;
+	background-color: var(--white);
+	transition: 0.2s ease-in-out;
+	box-shadow: var(--btnBoxShadow);
+}
+
+.linkStyles:hover {
+	text-decoration: underline;
+	color: var(--orangeHover);
+	transition: 0.2s ease-in-out;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+	transition: 0.2s ease-in-out;
+}
+
+.formRow a:hover {
+	text-decoration: underline;
+	color: var(--orangeHover);
+	transition: 0.2s ease-in-out;
+}
+
+.loginValidation {
+	width: 90%;
+	height: 30px;
+	text-align: center;
+	color: red;
+}
+
+.signInBtn {
+	width: 80%;
+	height: 53px;
+	font-size: 20px;
+	border: 0.1px solid #eee;
+	border-radius: 8px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: var(--btnBoxShadow);
+	box-shadow: 1px 1px 0.5em rgba(255, 174, 0, 0.3);
+	transition: var(--btnTransition);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s ease-in-out;
+	font-weight: 700;
+	color: var(--secondaryOrange);
+	background-color: inherit;
+}
+
+.signInBtn:hover {
+	background-color: var(--secondaryOrange);
+	color: white;
+	transition: 0.3s ease-in-out;
+	width: 70%;
+}
+
+.register {
+	margin-top: 30px;
+}
+
+.register p {
+	font-size: 16px;
+}
+
+.registerLink {
+	margin-left: 5px;
+	text-decoration: underline;
+	color: var(--orangeHover);
+}
+
+.registerLink:hover {
+	margin-left: 5px;
+	text-decoration: underline;
+	color: var(--orangeHover);
+}

@@ -1,0 +1,89 @@
+.nutritionContainer {
+	width: 80vw;
+	min-height: 100%;
+	margin: auto;
+	font-family: "Poppins-Medium", Helvetica !important;
+}
+
+.seeInfoBtnContainer {
+	width: 110em;
+	margin: auto;
+	display: flex;
+	height: 10em;
+	overflow: hidden;
+	align-items: center;
+}
+
+.btnContainer {
+	width: 21em;
+	height: 5em;
+}
+
+.lottieContainer {
+	width: 7em;
+	margin-bottom: 3em;
+}
+
+.nutritionalInfoContainer,
+.recipeTasteContainer,
+.nutritionaLabelContainer {
+	width: 110em;
+	max-height: 120em;
+	margin: auto;
+	overflow: hidden;
+}
+
+.nutritionalInfoContainer img,
+.recipeTasteContainer img,
+.nutritionaLabelContainer img {
+	height: 100%;
+}
+
+@media (max-width: 1500px) {
+	.btnContainer {
+		width: 22em;
+		height: 5.5em;
+	}
+}
+
+@media (max-width: 1400px) {
+	.btnContainer {
+		width: 24em;
+		height: 5.7em;
+	}
+}
+
+@media (max-width: 1250px) {
+	.btnContainer {
+		width: 26em;
+		height: 5.9em;
+	}
+}
+
+@media (max-width: 1150px) {
+	.btnContainer {
+		width: 28em;
+		height: 6.5em;
+	}
+}
+
+@media (max-width: 1100px) {
+	.btnContainer {
+		width: 29em;
+		height: 6.7em;
+	}
+}
+
+@media (max-width: 1050px) {
+	.btnContainer {
+		width: 30em;
+		height: 6.8em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.btnContainer {
+		width: 31em;
+		height: 6.9em;
+	}
+}

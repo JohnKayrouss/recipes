@@ -1,0 +1,23 @@
+.popularContainer {
+	min-height: calc(100vh - 7.8em);
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.cardWrapper {
+	width: 500px;
+	height: 500px;
+}
+@media (max-width: 875px) {
+	.popularContainer {
+		width: 90%;
+	}
+}
+@media (max-width: 780px) {
+	.popularContainer {
+		width: 100%;
+	}
+}

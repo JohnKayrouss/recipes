@@ -1,0 +1,237 @@
+:root {
+	--black: #253d4e;
+	--grey: #adadad;
+	--white: #fff;
+	--green: #39db4a;
+	--secondaryOrange: #ffb800;
+	--tertiaryOrange: #ffb80080;
+	--orangeHover: rgb(241, 114, 40);
+	--text-nav-black: #272727;
+	--btnBoxShadow: 0px 5px 5px 0px #bbb8b14a;
+	--btnBoxShadowOnHover: 0px 5px 2px 0px rgba(255, 174, 0, 0.4);
+	--btnYellowColor: rgb(255, 184, 0);
+	--btnYellowColorOnHover: #ff8a00;
+	--btnTransition: 0.2s ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+html {
+	font-size: 62.5% !important;
+	font-family: "Poppins-Medium", Helvetica !important;
+
+	background-color: var(--white);
+}
+body {
+	font-size: 100% !important;
+}
+.appContainer {
+	width: 83%;
+	margin: auto;
+	min-height: 100%;
+}
+
+/* = carousel styling here to fix the override react slick  */
+
+.popular {
+	max-width: 148em;
+	height: 60em;
+	background-color: rgb(29, 220, 220);
+	margin: 8em auto 8em auto;
+	/* overflow: hidden; */
+}
+
+.popular h1 {
+	text-align: center;
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 3.2em;
+}
+.carousel {
+	width: 148em;
+
+	height: 46.9em;
+	background-color: rgba(162, 106, 214, 0.401);
+	display: flex;
+	flex-direction: column;
+	/* overflow: hidden; */
+	padding: 1em 3em;
+}
+.card {
+	height: 400px;
+	background-color: #984c4c;
+	/* overflow: hidden; */
+}
+.card h1 {
+	text-align: center;
+}
+.slick-slide div {
+	margin: 0 1rem !important;
+}
+
+@media (max-width: 1880px) {
+	html {
+		font-size: 60% !important;
+	}
+}
+@media (max-width: 1800px) {
+	html {
+		font-size: 59% !important;
+	}
+}
+@media (max-width: 1750px) {
+	html {
+		font-size: 58% !important;
+	}
+}
+@media (max-width: 1725px) {
+	html {
+		font-size: 57% !important;
+	}
+}
+@media (max-width: 1700px) {
+	html {
+		font-size: 56% !important;
+	}
+}
+@media (max-width: 1675px) {
+	html {
+		font-size: 55% !important;
+	}
+}
+@media (max-width: 1650px) {
+	html {
+		font-size: 54.5% !important;
+	}
+}
+@media (max-width: 1625px) {
+	html {
+		font-size: 54% !important;
+	}
+}
+@media (max-width: 1600px) {
+	html {
+		font-size: 53.5% !important;
+	}
+}
+@media (max-width: 1575px) {
+	html {
+		font-size: 53% !important;
+	}
+}
+@media (max-width: 1550px) {
+	html {
+		font-size: 51% !important;
+	}
+}
+@media (max-width: 1500px) {
+	html {
+		font-size: 50% !important;
+	}
+}
+@media (max-width: 1475px) {
+	html {
+		font-size: 49% !important;
+	}
+}
+@media (max-width: 1450px) {
+	html {
+		font-size: 48% !important;
+	}
+}
+@media (max-width: 1425px) {
+	html {
+		font-size: 47% !important;
+	}
+}
+@media (max-width: 1400px) {
+	html {
+		font-size: 46% !important;
+	}
+}
+@media (max-width: 1375px) {
+	html {
+		font-size: 45% !important;
+	}
+}
+@media (max-width: 1350px) {
+	html {
+		font-size: 44.5% !important;
+	}
+}
+@media (max-width: 1325px) {
+	html {
+		font-size: 43% !important;
+	}
+}
+@media (max-width: 1300px) {
+	html {
+		font-size: 42.5% !important;
+	}
+}
+@media (max-width: 1275px) {
+	html {
+		font-size: 41.5% !important;
+	}
+}
+@media (max-width: 1250px) {
+	html {
+		font-size: 41% !important;
+	}
+}
+@media (max-width: 1225px) {
+	html {
+		font-size: 40% !important;
+	}
+}
+@media (max-width: 1200px) {
+	html {
+		font-size: 39% !important;
+	}
+}
+@media (max-width: 1175px) {
+	html {
+		font-size: 38% !important;
+	}
+}
+@media (max-width: 1150px) {
+	html {
+		font-size: 37% !important;
+	}
+}
+@media (max-width: 1125px) {
+	html {
+		font-size: 36% !important;
+	}
+}
+@media (max-width: 1100px) {
+	html {
+		font-size: 35% !important;
+	}
+}
+@media (max-width: 1075px) {
+	html {
+		font-size: 34% !important;
+	}
+}
+@media (max-width: 1050px) {
+	html {
+		font-size: 33.5% !important;
+	}
+}
+@media (max-width: 1025px) {
+	html {
+		font-size: 33% !important;
+	}
+}
+@media (max-width: 1000px) {
+	html {
+		font-size: 32.5% !important;
+	}
+}

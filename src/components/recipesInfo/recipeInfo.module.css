@@ -1,0 +1,163 @@
+.recipeInfoContainer {
+	max-width: 80vw;
+	min-height: 100%;
+	margin: auto;
+	font-family: "Poppins-Medium", Helvetica !important;
+}
+
+.nutritionContainer {
+	width: 110em;
+	margin: auto;
+	display: flex;
+	height: 10em;
+	overflow: hidden;
+	align-items: center;
+}
+
+.btnContainer {
+	width: 20em;
+	height: 5em;
+}
+
+.lottieContainer {
+	width: 7em;
+	margin-bottom: 3em;
+}
+
+.cardWithImgContainer {
+	width: 110em;
+	height: 70em;
+	margin: auto;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+.cardWithContentContainer {
+	width: 110em;
+	min-height: 30em;
+	margin: auto;
+	overflow: hidden;
+}
+
+.IngredientsWrapper {
+	background-color: beige;
+	height: 700px;
+}
+
+@media (max-width: 1800px) {
+	.btnContainer {
+		width: 20em;
+		height: 5em;
+	}
+	.cardWithImgContainer {
+		height: 70em;
+	}
+}
+
+@media (max-width: 1550px) {
+	.btnContainer {
+		width: 21em;
+		height: 5.5em;
+	}
+	.cardWithImgContainer {
+		height: 69em;
+	}
+}
+
+@media (max-width: 1350px) {
+	.btnContainer {
+		width: 24em;
+		height: 5.6em;
+	}
+	.cardWithImgContainer {
+		height: 67em;
+	}
+}
+
+@media (max-width: 1200px) {
+	.btnContainer {
+		width: 26em;
+		height: 5.6em;
+	}
+	.lottieContainer {
+		width: 8em;
+		margin-bottom: 3.5em;
+	}
+	.cardWithImgContainer {
+		height: 70em;
+	}
+}
+
+@media (max-width: 1100px) {
+	.btnContainer {
+		width: 28em;
+		height: 5.7em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.cardWithImgContainer {
+		height: 71em;
+	}
+	.cardWithContentContainer {
+		padding-right: 1%;
+	}
+	.btnContainer {
+		width: 160px;
+		height: 35px;
+	}
+}
+
+@media (max-width: 750px) {
+	.recipeInfoContainer {
+		max-width: 80vw;
+		min-height: 100%;
+		margin: auto;
+		font-family: "Poppins-Medium", Helvetica !important;
+	}
+	.cardWithContentContainer {
+		padding-right: 5%;
+	}
+}
+
+@media (max-width: 670px) {
+	.cardWithContentContainer {
+		padding-right: 14%;
+	}
+}
+
+@media (max-width: 600px) {
+	.cardWithContentContainer {
+		padding-right: 35%;
+	}
+}
+
+@media (max-width: 500px) {
+	.cardWithImgContainer img {
+		height: 90%;
+	}
+	.cardWithContentContainer {
+		padding-right: 50%;
+	}
+}
+
+@media (max-width: 450px) {
+	.cardWithContentContainer {
+		padding-right: 68%;
+	}
+}
+
+@media (max-width: 400px) {
+	.cardWithImgContainer img {
+		height: 75%;
+	}
+	.cardWithContentContainer {
+		padding-right: 90%;
+	}
+}
+
+@media (max-width: 350px) {
+	.cardWithContentContainer {
+		padding-right: 110%;
+	}
+}

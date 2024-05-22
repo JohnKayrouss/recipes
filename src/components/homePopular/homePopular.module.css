@@ -1,0 +1,160 @@
+.popularContainer {
+	width: 90%;
+	height: 70em;
+	background: linear-gradient(
+		0deg,
+		rgba(247, 173, 52, 0) 75%,
+		rgba(253, 187, 45, 0.5718662464985995) 100%
+	);
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.popularHeader {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popularHeader h1 {
+	text-align: center;
+	font-size: 5em;
+	font-weight: 600;
+	color: rgba(241, 114, 40, 1);
+}
+
+.carousel {
+	cursor: grab;
+	width: 100%;
+}
+
+.innerCarousel {
+	display: flex;
+	min-width: fit-content;
+	height: 55em;
+	padding: 0 3em;
+	overflow: hidden;
+}
+
+.item {
+	height: 55em;
+	min-width: 40em;
+	max-width: 40em;
+	padding: 40px;
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+	border-radius: 2rem;
+	pointer-events: none;
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	position: relative;
+	background-color: #eeeeee6f;
+	overflow: hidden;
+}
+
+.cardBody {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background: #00000068;
+	backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: column;
+	padding: 2em 1em;
+	justify-content: end;
+	align-items: center;
+	transition: 0.3s all ease-in;
+}
+
+.card:hover .cardBody {
+	left: 0;
+}
+
+.cardHeader {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 2em;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 0 1em;
+}
+
+.btnContainer {
+	width: 15em;
+	height: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1500px) {
+	.popularContainer {
+		height: 85em;
+	}
+	.item {
+		padding: 3em;
+	}
+	.btnContainer {
+		width: 16em;
+	}
+	.popularHeader h1 {
+		font-size: 5em;
+	}
+}
+
+@media (max-width: 1300px) {
+	.cardHeader {
+		font-size: 2.3em;
+		width: 15em;
+		height: 5em;
+	}
+	.btnContainer {
+		width: 18em;
+	}
+}
+
+@media (max-width: 1150px) {
+	.popularContainer {
+		height: 90em;
+	}
+	.item {
+		height: 50em;
+		min-width: 37em;
+		max-width: 37em;
+		padding: 2em;
+	}
+	.btnContainer {
+		width: 20em;
+		height: 6em;
+	}
+	.cardHeader {
+		font-size: 2.4em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.item {
+		height: 48em;
+		min-width: 36em;
+		max-width: 36em;
+		padding: 1.5em;
+	}
+	.btnContainer {
+		width: 18em;
+	}
+}
